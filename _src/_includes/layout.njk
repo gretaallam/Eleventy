@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        {% include "nav.html" %}
+    </header>
+    {% if title=="Home" %}
+        <div class="hero">
+            <h1>{{ title }}</h1>
+        </div>
+    {% endif %}
+    
+    <div class="wrapper">
+        {% if title!="Home" %}
+            <h1>{{ title }}</h1>
+        {% endif %}
+        {{ content | safe }}
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
