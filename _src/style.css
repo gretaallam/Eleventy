@@ -64,6 +64,15 @@
     --body-text: "Lato", sans-serif;
 }
 
+/* Image Styling */
+img {
+    max-width: 60vw;
+    height: auto;
+    border: 10px solid rgb(88, 99, 126);
+    border-radius: 1em;
+    object-fit: cover;
+}
+
 /* Body */
 body {
     margin: 0;
@@ -71,9 +80,18 @@ body {
     background-color: var(--dark-blue);
     color: white;
 }
-header, footer {
+header {
     padding: 1em 4em;
-    background-color:  var(--light-blue);
+    background-color: var(--light-blue);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 nav {
     display: flex;
@@ -81,8 +99,9 @@ nav {
     color: var(--cream);
 }
 
-nav ul {
+nav ul, nav li {
     list-style: none;
+    font-size: 1em;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -104,6 +123,10 @@ nav a:hover {
 }
 
 nav h1 {
+    font-size: 2.5em;
+    -webkit-text-stroke: 6px var(--dark-blue);
+    paint-order: stroke fill;
+    margin-top: .5em;
     letter-spacing: 0.3em;
 }
 
@@ -121,6 +144,7 @@ nav h1 {
     font-size: 4em;
     -webkit-text-stroke: 6px var(--cream);
     paint-order: stroke fill;
+    margin-top: .5em;
 }
 .hero h3 {
     color: var(--light-blue);
@@ -133,11 +157,14 @@ nav h1 {
     width: 100vw;
     height: 70vh;
     object-fit: cover;
+    max-width: none;
+    border: none;
+    border-radius: 0;
 }
 
 /* Basic Page Styling */
 .wrapper {
-    padding: 5vw;
+    padding: 0 5vw;
 }
 .row {
     display: flex;
@@ -146,7 +173,33 @@ nav h1 {
     flex: 1;
 }
 
-.h1, h2, h3 {
+h1, h2, h3 {
     font-family: var(--hero);
     color: var(--cream);
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 2em;
+}
+
+p, li {
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+img {
+    max-width: 60vw;
+    height: auto;
+    border: 10px solid rgb(88, 99, 126);
+    border-radius: 1em;
+    object-fit: cover;
 }

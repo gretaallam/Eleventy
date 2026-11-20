@@ -13,6 +13,7 @@
     <header>
         {% include "nav.html" %}
     </header>
+    {% include "nav.html" %}
     {% if title=="Home" %}
         <div class="hero">
             <h2>Living a Zen Life</h2>
@@ -27,7 +28,5 @@
         {% endif %}
         {{ content | safe }}
     </div>
-    <footer>
-    </footer>
 </body>
 </html>

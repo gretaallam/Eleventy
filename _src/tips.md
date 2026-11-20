@@ -5,33 +5,54 @@ title: Tips
 
 ## These are some tips to living a zen life
 
+A collection of actual tips to living a zen life
 
-# Item List
+--- 
 
-A collection of items with images and descriptions.
+## Remember to Breathe
 
----
+![Fluffy plant up close](/img/fuzzy2.jpg)
 
-## Item One
+It's a really important thing to do. 
 
-![Item One](/img/boid.jpg)
-
-Add a description of your first item here. Include any important details or information.
-
----
-
-## Item Two
-
-![Item Two](/img/boid.jpg)
-
-Add a description of your second item here. Include any important details or information.
+    - Coming from an asthmatic
 
 ---
 
-## Item Three
+## Eat Food
 
-![Item Three](/img/boid.jpg)
+![Dried up weeds on a river bank](/img/weeds2.jpg)
 
-Add a description of your third item here. Include any important details or information.
+Eat well, eat enough, eat what makes you happy. Your body is a temple or whatever, feed it.
+
+---
+
+## Get Moving to Stay Grooving
+
+![Duck in the water](/img/duck.jpg)
+
+Keep active. Go for a walk, lift weights, do yoga? A healthy body = a healthy mind.
+
+#Danceyourstressaway
+
+---
+
+## No More Doomscrolling
+
+![Fuzzy plants in the bush](/img/fuzzes.jpg)
+
+Don't mindlessly scroll like a zombie. The world is waiting for you. Get that seratonin from the things you actually enjoy.
+
+I need to listen to this one too.
+
+---
+
+## Prioritize YOU
+
+![Water](/img/water.jpg)
+
+Like not in a narcisistic way, but a take care of yourself before other things way.
+
+    - My #1 cause of procrastination
 
 ---
