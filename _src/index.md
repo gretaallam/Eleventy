@@ -4,13 +4,13 @@ title: Home
 ---
 
 
-## This is my home page
+## What does it mean to live a Zen life?
 
-This is paragraph
+I actually have no real idea. These are just my thoughts.
 
-This is another paragraph
+The following are my qualifications:
 
-- this is list item 1
-- this is list item 2
-- this is list item 3
+- I've been told I am Zen
+- Sometimes brain is empty
+- La la la la
 

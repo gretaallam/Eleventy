@@ -1,33 +1,141 @@
+.concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Colours and Fonts */
+:root {
+    --dark-blue: rgb(14, 21, 34);
+    --light-blue: rgb(88, 99, 126);
+    --cream: rgb(227, 224, 196);
+    --hero: "Concert One", sans-serif;
+    --body-text: "Lato", sans-serif;
+}
+
+/* Body */
 body {
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--body-text);
+    background-color: var(--dark-blue);
+    color: white;
 }
 header, footer {
-    padding: 2vw 5vw;
-    background-color: rgb(28, 42, 56);
+    padding: 1em 4em;
+    background-color:  var(--light-blue);
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    color: var(--cream);
+}
+
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     display: flex;
-    gap: 3rem;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-}
-.hero {
-    background-color: lightslategrey;
-    color: white;
-    padding: 3vw;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    margin-left: auto;
+    gap: 1.5rem;
 }
-.hero h1 {
-    font-size: 6rem;
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    background-color: var(--cream);
+    color: var(--dark-blue);
+}
+
+nav h1 {
+    letter-spacing: 0.3em;
+}
+
+/* Home Page Hero */
+.hero {
+    display: flex;
+    position: relative;
+}
+.hero h2, h3 {
+    color: var(--dark-blue);
+    font-family: var(--hero);
+    text-transform: uppercase;
+    padding: .5em 1em;
+    position:absolute;
+    font-size: 4em;
+    -webkit-text-stroke: 6px var(--cream);
+    paint-order: stroke fill;
+}
+.hero h3 {
+    color: var(--light-blue);
+    font-family: var(--hero);
+    font-size: 4em;
+    padding-top: 1.5em;
+}
+
+.hero img {
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+}
+
+/* Basic Page Styling */
 .wrapper {
     padding: 5vw;
 }
@@ -36,4 +144,9 @@ nav a {
 }
 .column {
     flex: 1;
+}
+
+.h1, h2, h3 {
+    font-family: var(--hero);
+    color: var(--cream);
 }

@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: About
+title: Tricks
 ---
 
 this is the {{title}} page
