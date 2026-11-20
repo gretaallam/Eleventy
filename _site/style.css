@@ -57,125 +57,113 @@
 
 /* Colours and Fonts */
 :root {
-    --dark-blue: rgb(14, 21, 34);
-    --light-blue: rgb(88, 99, 126);
-    --cream: rgb(227, 224, 196);
-    --hero: "Concert One", sans-serif;
-    --body-text: "Lato", sans-serif;
-}
-
-/* Image Styling */
-img {
-    max-width: 60vw;
-    height: auto;
-    border: 10px solid rgb(88, 99, 126);
-    border-radius: 1em;
-    object-fit: cover;
+  --dark-blue: rgb(14, 21, 34);
+  --light-blue: rgb(88, 99, 126);
+  --cream: rgb(227, 224, 196);
+  --hero: "Concert One", sans-serif;
+  --body-text: "Lato", sans-serif;
 }
 
 /* Body */
 body {
-    margin: 0;
-    font-family: var(--body-text);
-    background-color: var(--dark-blue);
-    color: white;
-}
-header {
-    padding: 1em 4em;
-    background-color: var(--light-blue);
+  margin: 0;
+  font-family: var(--body-text);
+  background-color: var(--dark-blue);
+  color: white;
 }
 
+/* Header and Nav */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
+  padding: 1em 4em;
+  background-color: var(--light-blue);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 nav {
-    display: flex;
-    flex-direction: row;
-    color: var(--cream);
+  display: flex;
+  flex-direction: row;
+  color: var(--cream);
 }
 
 nav ul, nav li {
-    list-style: none;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 1.5rem;
+  list-style: none;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1.5rem;
 }
 
 nav a {
-    color: var(--cream);
-    text-decoration: none;
-    background-color: var(--dark-blue);
-    padding: 0.75em 1.5em;
-    border-radius: 0.5em;
-    transition: 0.3s;
+  color: var(--cream);
+  text-decoration: none;
+  background-color: var(--dark-blue);
+  padding: 0.75em 1.5em;
+  border-radius: 0.5em;
+  transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: var(--cream);
-    color: var(--dark-blue);
+  background-color: var(--cream);
+  color: var(--dark-blue);
 }
 
 nav h1 {
-    font-size: 2.5em;
-    -webkit-text-stroke: 6px var(--dark-blue);
-    paint-order: stroke fill;
-    margin-top: .5em;
-    letter-spacing: 0.3em;
+  font-size: 2.5em;
+  -webkit-text-stroke: 6px var(--dark-blue);
+  paint-order: stroke fill;
+  margin-top: .5em;
+  letter-spacing: 0.3em;
 }
 
 /* Home Page Hero */
 .hero {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 .hero h2, h3 {
-    color: var(--dark-blue);
-    font-family: var(--hero);
-    text-transform: uppercase;
-    padding: .5em 1em;
-    position:absolute;
-    font-size: 4em;
-    -webkit-text-stroke: 6px var(--cream);
-    paint-order: stroke fill;
-    margin-top: .5em;
+  color: var(--dark-blue);
+  font-family: var(--hero);
+  text-transform: uppercase;
+  padding: .5em 1em;
+  position:absolute;
+  font-size: 4em;
+  -webkit-text-stroke: 6px var(--cream);
+  paint-order: stroke fill;
+  margin-top: .5em;
 }
 .hero h3 {
-    color: var(--light-blue);
-    font-family: var(--hero);
-    font-size: 4em;
-    padding-top: 1.5em;
+  color: var(--light-blue);
+  font-family: var(--hero);
+  font-size: 4em;
+  padding-top: 1.5em;
 }
 
 .hero img {
-    width: 100vw;
-    height: 70vh;
-    object-fit: cover;
-    max-width: none;
-    border: none;
-    border-radius: 0;
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+  max-width: none;
+  border: none;
+  border-radius: 0;
 }
 
 /* Basic Page Styling */
 .wrapper {
-    padding: 0 5vw;
+  padding: 0 5vw;
 }
 .row {
-    display: flex;
+  display: flex;
 }
 .column {
-    flex: 1;
+  flex: 1;
 }
 
 h1, h2, h3 {
-    font-family: var(--hero);
-    color: var(--cream);
+  font-family: var(--hero);
+  color: var(--cream);
 }
 
 h2 {
@@ -197,9 +185,42 @@ p {
 }
 
 img {
-    max-width: 60vw;
-    height: auto;
-    border: 10px solid rgb(88, 99, 126);
-    border-radius: 1em;
-    object-fit: cover;
+  max-width: 60vw;
+  height: auto;
+  border: 10px solid rgb(88, 99, 126);
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+@media (max-width: 1073px) {
+  header {
+    padding: 0 4em;
+    background-color: var(--light-blue);
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {  
+    margin: 0;
+    padding:0;  
+    padding-bottom: 1.5em;
+  }
+
+  nav h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 636px) {
+  .hero h3 {
+    padding-top: 2.75em;
+  }
+}
+@media (max-width: 369px) {
+  .hero h3 {
+    padding-top: 4em;
+  }
 }
